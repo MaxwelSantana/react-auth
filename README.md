@@ -24,23 +24,16 @@ This project was created for study purposes. The goals are to improve react hook
 
 ---
 
+## Tópicos de Estudos
+
+- [x]  Next.Js Page Routes
+- [x]  Authentication with multiple providers with Next Auth
+- [x]  Custom Login Page
+- [x]  Protected pages
+
 ## Features
-
-- [x] Companies or entities can register on the web platform by sending:
-   - [x] an image of the collection point
-   - [x] entity name, email and whatsapp
-   - [x] and the address so that it can appear on the map
-   - [x] in addition to selecting one or more collection items:
-     - lamps
-     - Batteries
-     - papers and cardboard
-     - electronic waste
-     - organic waste
-     - kitchen oil
-
-- [x] Users have access to the mobile application, where they can:
-   - [x] browse the map to see the registered institutions
-   - [x] contact the entity via E-mail or WhatsApp
+- [x]  The system should allow logging in with social networks
+- [x]  The system should allow logging in by email
 
 ---
 
@@ -52,3 +45,4 @@ This project was created for study purposes. The goals are to improve react hook
 
 ---
 
+## :zap: **Tech Stack**

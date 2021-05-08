@@ -12,8 +12,10 @@ div#__next {
 :root {
     --background: #f0f3ff;
     --title: #253274;
-    --white: #FFFFFF;
-    --primary: #7189FF;
+    --white: #ffffff;
+    --primary: #7189ff;
+    --primary-dark: #657be5;
+    --error: #e34850;
 }
 
 body {
@@ -40,7 +42,6 @@ textarea {
     vertical-align: middle;
     white-space: normal;
     background: none;
-    line-height: 1;
 }
 
 input:focus {
@@ -51,10 +52,10 @@ button {
     cursor: pointer;
 }
 
-a {
+/* a {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 * {
     box-sizing: border-box;

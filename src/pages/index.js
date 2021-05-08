@@ -1,13 +1,21 @@
-import Head from 'next/head';
-import { SignInForm } from '../components/SignInForm';
-import styles from '../styles/pages/Home.module.css';
+import { signIn, signOut, useSession } from 'next-auth/client';
+import Link from 'next/link';
 
 export default function Home() {
+    const [session] = useSession();
     return (
-        <div className={styles.container}>
-            <section>
-                <SignInForm />
-            </section>
-        </div>
+        <>
+            <h1>Home</h1>
+            {!session && (
+                <Link href={`/signin`}>
+                    <a>Sign In</a>
+                </Link>
+            )}
+            {session && <button onClick={signOut}>Sign Out</button>}
+            <br />
+            <Link href={`/protected`}>
+                <a>Protected</a>
+            </Link>
+        </>
     );
 }
