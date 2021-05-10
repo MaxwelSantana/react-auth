@@ -1,0 +1,40 @@
+.protectedContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem auto 1rem;
+    align-items: center;
+}
+
+.protectedContainer img {
+    margin-bottom: 0.5rem;
+    width: 15rem;
+}
+
+.protectedContainer .title {
+    text-align: center;
+    color: var(--title);
+}
+
+.protectedContainer .title h1 {
+    color: var(--title);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    border: none;
+}
+
+.protectedContainer .title p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.protectedContainer nav {
+    font-size: 1.5rem;
+    padding: 4rem 1rem 0;
+}
+
+.protectedContainer nav a:last-child {
+    margin-left: 0.5rem;
+}

@@ -1,8 +1,7 @@
 import { getProviders, getSession, signIn } from 'next-auth/client';
-import styles from '../styles/pages/Login.module.css';
+import styles from '../styles/pages/signin.module.css';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import Link from 'next/link';
 
 export default function SignIn() {
     const router = useRouter();
@@ -28,7 +27,7 @@ export default function SignIn() {
                 <section className={styles.signInFormcontainer}>
                     <header>
                         <img src="/icons/logo.svg" alt="Logo" />
-                        <h1>Log In to Brand</h1>
+                        <h1>Sign In</h1>
                     </header>
                     <section className={styles.socialContainer}>
                         <button
@@ -80,7 +79,9 @@ export default function SignIn() {
                                 )}
                             </div>
                             <div>
-                                <button type="submit">Log In</button>
+                                <button disabled={!email} type="submit">
+                                    Log In
+                                </button>
                             </div>
                         </form>
                     </main>
@@ -98,7 +99,7 @@ export async function getServerSideProps(context) {
     if (session && res) {
         return {
             redirect: {
-                destination: '/',
+                destination: '/protected',
                 permanent: false,
             },
         };
